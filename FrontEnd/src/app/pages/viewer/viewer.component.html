@@ -1,0 +1,25 @@
+<div class="body-container">
+  <div id="title-text">
+    Summary
+  </div>
+  <div class="icon-container">
+    <div (click)="switcher()" id="switch">
+      <div class="float">
+        <i class="fa fa-eye eye" aria-hidden="true" title="Click to Switch between View and Summary"></i>
+      </div>
+    </div>
+    <div id="stats">
+    </div>
+  </div>
+
+  <div *ngIf="dataFlag" class="view-doc ">
+    {{ data }}
+  </div>
+  <div *ngIf="!dataFlag" class="view-doc ">
+    {{ summary }}
+  </div>
+
+</div>
+<div class="loading none">
+  <app-wait-page></app-wait-page>
+</div>

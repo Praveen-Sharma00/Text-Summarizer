@@ -1,0 +1,8 @@
+flask
+werkzeug
+PyPDF2
+networkx
+nltk
+numpy
+bs4
+requests

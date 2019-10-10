@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Demo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+</head>
+
+<body>
+    <hr>
+    <form action="http://localhost:5000/upload" method="post" enctype="multipart/form-data">
+        <div>
+            Input File :
+            <input name="inputFile" type="file">
+        </div>
+        <div>
+            Approximate number of lines:
+            <input type="number" name="lines">
+        </div>
+        <button type="submit">send</button>
+    </form>
+    <hr>
+    <br>
+</body>
+
+</html>
